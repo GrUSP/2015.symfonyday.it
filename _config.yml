@@ -3,4 +3,4 @@ pygments: true
 permalink: /blog/:title
 rdiscount:
   extensions: [smart]
-conf_data: "PLACE, DATA"
+conf_data: "Milano, 10/10/2014"
