@@ -18,9 +18,10 @@ tickets_url: http://eventbrite.com/tickets-external?eid=12877698543&ref=etckt
 {% if page.cfp %} {% include section-cfp.html %} {% endif %}
 {% if page.tickets %} {% include section-tickets.html %} {% endif %}
 {% if page.speakers %} {% include section-speakers.html %} {% endif %}
+{% include section-workshop.html %}	
 
 {% capture place %}{{'places/'}}{{page.where}}{{'.html'}}{% endcapture %}
 
 {% include {{place}} %}	
-{% include section-workshop.html %}	
+
 {% include section-sponsors.html %}
