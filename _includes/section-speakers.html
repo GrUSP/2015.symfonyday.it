@@ -124,7 +124,7 @@ Attraverso codici di esempio saranno affrontati questi argomenti:
         <td class="time">14:30 &ndash; 15:00</td>
         <td>
             <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="La sezione Utilities di Facile.it ha recentemente riscritto il proprio applicativo interno utilizzando Ember.js con Ember Data che si appoggia a sua volta ad un WebService REST realizzato in PHP tramite Symfony2 full-stack e alcuni bundle messi a disposizione dall'ecosistema di Symfony per gestire Redis, ElasticSearch, ACL e quant'altro si è reso necessario.
-Durante la presentazione verranno discusse le motivazioni che hanno portato a scegliere ciascun componente, come è stato integrato all'interno dell'applicativo, quali problematiche ci si è imbattuti e come sono state risolte.">Applicazioni con architetture distribuite in Symfony2</a></h4>
+Durante la presentazione verranno discusse le motivazioni che hanno portato a scegliere ciascun componente, come è stato integrato all'interno dell'applicativo, in quali problematiche ci si è imbattuti e come sono state risolte.">Applicazioni con architetture distribuite in Symfony2</a></h4>
             <a href="http://twitter.com/thinkindie" title="Matteo Galli">Matteo Galli - @thinkindie</a>
         </td>
       </tr>
@@ -163,13 +163,11 @@ Verrà usato come esempio il modulo webprofiler (http://drupal.org/project/webpr
       <tr class="common_event">
         <td class="time">16:35 &ndash; 17:05</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="In everyday life sooner or later we will have to manage permissions on a particular object, limiting access by the ownership. 
-The Symfony2 Security component apparently does not cover this case study, for more complicated reasons the answer seems to be the ACE (Access Control Engine). 
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Prima o poi ogni sviluppatore dovrà confrontarsi con la gestione dei premessi su un dato oggetto, limitando le interazioni possibili in base al concetto di possesso.
 
-ACLs are a very complex tool, which is often used to 1% of its potential; are the class-scope, the object-scope, the class-field-scope and  the object-field-scope all needed at the same time in our domain? 
+Il layer di sicurezza di symfony apparentemente non copre questa specifica necessità se non mediante l'ACE (Access Control Engine), studiato sicuramente per necessità più complesse. Le ACL sono infatti uno strumento molto complesso, che viene spesso utilizzato per 1% del suo potenziale; il class-scope, l'object-scope, il class-field-scope e l'object-field-scope sono veramente necessari all'interno del nostro dominio?
 
-With voters we can decide whether to perform an action depending on the actual ownership without using ACLs, so without worrying about the performance and the maintaining, without taking over the management of such a complex system, taking full advantage of one of the hidden gems of Symfony2 and keeping the focus solely on the domain logic.
-">The Right to Vote(rs)</a></h4>
+Con i voters possiamo regolare l'accesso ad una determinata azione su una risorsa a partire dall'effettivo possesso della stessa, senza utilizzare le ACL e quindi senza preoccuparci di performance e mantenibilità, senza prenderci carico della gestione di un sistema così complesso, sfruttando una delle gemme nascoste di Symfony2 e mantenendo l'attenzione esclusivamente sulla logica di dominio.">The Right to Vote(rs)</a></h4>
             <a href="http://twitter.com/ClaudioSThought" title="Claudio D'Alicandro">Claudio D'Alicandro - @ClaudioSThought</a>
         </td>
       </tr>
