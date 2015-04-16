@@ -3,12 +3,13 @@ layout: sfday
 title: Symfony Day
 ttl: Symfony Day
 conf_data: "Reggio Emilia, 9 ottobre 2015"
-cfp: true
+cfp: false
 cfp_url: https://docs.google.com/forms/d/1GvW3jO_FqTku1A6B_kPFjD74sbRcQhGnh1z4MZT7XY0/viewform?usp=send_form
 speakers: false
 cfs: true
 where: remilia-re
 tickets: true
+workshop: false
 tickets_url: http://eventbrite.com/tickets-external?eid=12877698543&ref=etckt
 ---
 
@@ -18,7 +19,7 @@ tickets_url: http://eventbrite.com/tickets-external?eid=12877698543&ref=etckt
 {% if page.cfp %} {% include section-cfp.html %} {% endif %}
 {% if page.tickets %} {% include section-tickets.html %} {% endif %}
 {% if page.speakers %} {% include section-speakers.html %} {% endif %}
-{% include section-workshop.html %}	
+{% if page.workshop %} {% include section-workshop.html %} {% endif %}
 
 {% capture place %}{{'places/'}}{{page.where}}{{'.html'}}{% endcapture %}
 
