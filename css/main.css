@@ -693,6 +693,10 @@ a:hover.slides{
 	color: #CD7F32;
 }
 
+.supporter .platinum {
+	color: #BFBFBF;
+}
+
 .supporter li {
 	text-align: left;
 }
@@ -705,10 +709,14 @@ a:hover.slides{
 	font-weight: 800;
 }
 
-.gold_supporter, .silver_supporter, .bronze_supporter {
+.gold_supporter, .silver_supporter, .bronze_supporter, .platinum_supporter {
 	clear: both;
 	text-align: center;
 	margin-bottom: 60px;
+}
+
+.platinum_supporter .banner {
+	width: 25.00%;
 }
 
 .gold_supporter .banner {
