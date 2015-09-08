@@ -25,22 +25,30 @@
             <h4><a href="#" onclick="javascript:return(false);">Presentazione GrUSP</a></h4>
         </td>
       </tr>
-	  
+
       <tr class="common_event">
         <td class="time">09:45 &ndash; 10:00</td>
         <td>
-            <h4><a href="#" onclick="javascript:return(false);">Presentazione pugMi</a></h4>
+            <h4><a href="#" onclick="javascript:return(false);">Presentazione pugMoRe</a></h4>
         </td>
       </tr>
 
       <tr class="common_event">
         <td class="time">10:05 &ndash; 10:50</td>
         <td>
-            <h4><a href="#" onclick="javascript:return(false);" rel="tooltip" title="In questo talk parleremo di User Stories e di come costruire un'applicazione web con Symfony2 cercando di colmare la distanza tra il team di sviluppo e gli altri team aziendali, andando a costruire, tramite esempi reali le specifiche dell'applicazione e costruendo un linguaggio unificato che permetta a tutti gli attori di essere parte del progetto. 
-Behat e Mink saranno i tool che integreremo nella nostra applicazione per controllare le nostre expectations!">Symfony2 & Specification by Examples</a></h4>
-            <a href="http://twitter.com/walterdalmut" title="Walter Dal Mut">Walter Dal Mut - @walterdalmut</a>
-            <br /><a href="http://www.slideshare.net/corleycloud/symfony2-specification-by-examples" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/109614435" title="" class="video">Video</a>
+            <h4><a href="#" onclick="javascript:return(false);" rel="tooltip" title="
+              Con l'arrivo della nuova major release di Symfony è tempo di pensare all'upgrade dei propri progetti...
+              se siete preoccupati perché vi torna in mente il passaggio da symfony 1 a symfony 2 non temete,
+              le cose in questo caso saranno molto più semplici (o quasi ;-)).
+
+              Tra gli argomenti trattati in questa sessione:
+              - roadmap del progetto
+              - gestione delle api deprecate nel core di Symfony
+              - step per l'upgrade
+">Symfony3, guida alla migrazione</a></h4>
+            <a href="http://twitter.com/_orso_" title="Michele Orselli">Michele Orselli</a>
+            <!--br /><a href="" title="" class="slides">Slide</a>
+            <br /><a href="http://vimeo.com/109614435" title="" class="video">Video</a-->
         </td>
       </tr>
 
@@ -54,11 +62,24 @@ Behat e Mink saranno i tool che integreremo nella nostra applicazione per contro
       <tr class="common_event">
         <td class="time">11:05 &ndash; 11:50</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip"  title="Sogni di sviluppare il tuo SaaS, di poterlo gestire, curare, evolvere. Speri di attrarre nuovi utenti con funzionalità innovative, di offrire un servizio veloce e puntuale. Finalmente ti puoi concentrare sulla qualità del tuo prodotto. Poi una mattina ti svegli, hai un database da 50GB, modificare una colonna richiede 8 ore e ti ritrovi in trappola. Gioie e dolori delle applicazioni multi-tenant. In questo talk analizzeremo perché e come abbiamo suddiviso il database di un SaaS da circa 1 milione di utenti.
-Vedremo come aggiungere un parametro di selezione del db a tutti i comandi della console, come eseguire comandi in parallelo per ridurre i tempi di manutenzione, come aggiungere info di debug utilizzando gli eventi del framework, come gestire il caricamento delle fixtures, quali idee si sono rivelate vincenti e quali no.">SaaS con Symfony2, un caso *molto* concreto</a></h4>
-            <a href="http://twitter.com/ftassi" title="Francesco Tassi">Francesco Tassi - @ftassi</a>, <a href="http://twitter.com/madisoft" title="Matteo Moretti">Matteo Moretti - @madisoft</a>
-            <br /><a href="http://www.slideshare.net/ftassi/saas-consymfonysharding" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/109747673" title="" class="video">Video</a>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip"  title="
+              I micro servizi sono la nuova buzzword del momento.
+              La comunità, le aziende si stan pian piano muovendo, o quantomeno cominciando a considerare, verso questo stile architetturale molto promettente, che nasconde però pericoli e insidie.
+
+              In un simile contesto, può Symfony essere una scelta adatta considerando tutti i fattori all’interno di un team di sviluppo?
+
+              Il talk si dirama attraverso un caso di studio reale che stiamo affrontando a Sainsbury’s (uno dei piu grandi food retailer UK), dove abbiamo sposato questa architettura e ci stiamo impegnando a sviluppare alcuni microservices scritti in PHP utilizzando o il framework o le librerie di Symfony.
+
+              Verranno percorsi diversi punti, che comprenderanno:
+              *  accettazione di Symfony in un team tipicamente eterogeneo come quello coinvolto nello sviluppo di microservices.
+              *  come “alleggerire” la configurazione di Symfony
+              *  come disaccoppiare alcune componenti, tra cui le componenti di dominio
+              *  come integrare in maniera minimale i servizi tra loro, facendo uso delle stesse tecniche utilizzate in DDD per integrare i Bounded Context
+              *  testing comportamentali, unitari e funzionali, dei componenti e di integrazione  a supporto del ciclo di continuous integration, vitale nelle architetture di questo tipo
+              *  conclusioni, Limiti e Vantaggi nell’utilizzo di framework MVC, quale Symfony
+
+              ">Symfony components in a microserice architecture</a></h4>
+            <a href="https://twitter.com/dangelidaniele" title="Daniele	D'Angeli">Daniele	D'Angeli - @dangelidaniele</a>
         </td>
       </tr>
 
@@ -66,59 +87,38 @@ Vedremo come aggiungere un parametro di selezione del db a tutti i comandi della
       <tr class="common_event">
         <td class="time">11:55 &ndash; 12:25</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Spesso ci viene richiesto di aggiungere funzionalità di gestione di contenuti a progetti esistenti o di creare nuovi CMS adhoc: oggi il Symfony CMF è un'ottima scelta da cui partire.
-Non un CMS ma una decina di bundle con singole funzionalità tra cui scegliere e da comporre secondo le nostre esigenze.
-Routing dinamico, albero dei contenuti, gestione dei menù, documenti con PHPCR e media saranno i protagonisti del talk.
-Ma è così semplice quanto sembra? Composer basta? E il backend dov'è? Io uso MySQL e non Jackrabbit, posso utilizzare il CMF?
-Cercheremo di fugare i principali dubbi e vedremo come creare un semplice CMS.">Un CMS in 25 minuti</a></h4>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="
+              Migrare applicazioni Zend Framework 1, Symfony 1 o PHP for dummies è spesso all'ordine del giorno.
+              Se l'app è un blog, si butta e al limite si migrano i dati.
+              Se l'app è mission critical oppure è Skynet, difficilmente sarà così semplice migrare.
+              In questo talk si parlerà di alcuni metodi per poter far convivere/migrare applicazioni
+              create con framework diverso da Sf2: sessioni, template engine, database, etc.
+              ">Migrare senza dolore da * a Symfony 2</a></h4>
             <a href="http://twitter.com/k3a" title="Manuel Baldassarri">Manuel Baldassarri - @k3a</a>
-            <br /><a href="http://www.slideshare.net/kea42/un-cms-in-25min-con-symfony-cmf" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/109864178" title="" class="video">Video</a>
         </td>
       </tr>
 
       <tr class="common_event">
         <td class="time">12:30 &ndash; 13:15</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Portare la complessità del dominio da modellare direttamente nelle entità, aiuta a semplificare e può essere una buona strada anche quando il dominio risulti, ad un primo sguardo, banale.
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="
+              I messaggi HTTP sono un elemento basilare nello sviluppo web:
+              le applicazioni che scriviamo quotidinamente ricevono richieste HTTP,
+              le elaborano e a loro volta restituiscono risposte HTTP. Fino ad oggi,
+              ogni framework ha sviluppato una sua propria astrazione dei messaggi
+              HTTP per permetterne un più facile utilizzo. Di conseguenza,
+              molte applicazioni hanno scelto in partenza una specifica astrazione
+              dei messaggi HTTP, legandosi così ad una particolare implementazione.
 
-Utilizzando Symfony2 e Doctrine2 è relativamente semplice implementare l'infrastruttura del nostro Domain Model scegliendo di volta in volta il compromesso che si ritiene migliore.
+              PSR-7 si propone di fornire un insieme comune di interfacce per la gestione
+              dei messaggi HTTP, in modo da consentire la scrittura di componenti riusabili
+              e indipendenti da un particolare framework o da una particolare implementazione.
 
-Attraverso codici di esempio saranno affrontati questi argomenti:
-
-* Domain Modelling
-
-- Domain, Domain Model and Ubiquitous Language
-- Rich vs Anemic Model
-- Data, Behaviours and Object Status
-- Validation: invariants and user input
-- Plain PHP Fixtures
-- Repository pattern
-- Traverse and protect the collections
-- Be iterative using TDD
-
-* Doctrine
-
-- Mapping
-- Doctrine Repository
-- Renderer
-- Optimization
-
-* Symfony
-
-- Command, Command Handler and Use Case
-- Events
-- Forms
-- Command Validation
-
-* Trade Offs
-
-- Adapt the model after Persistence's implementation
-- Symfony Forms: entity type example
-- Autogenerated Id">Rich Domain Model with Symfony2 and Doctrine2</a></h4>
-            <a href="http://twitter.com/@_leopro_" title="Leonardo Proietti">Leonardo Proietti - @_leopro_</a>
-            <br /><a href="http://www.slideshare.net/_leopro_/rich-domain-model-with-symfony-25-and-doctrine-25" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/109864177" title="" class="video">Video</a>
+              In questo talk vedremo quali interfacce sono definite in PSR-7, quali scelte sono state
+              fatte nel loro design e daremo un'occhiata al loro utilizzo in Symfony e negli altri
+              principali framework PHP
+              ">Un nuovo standard, benvenuto PSR-7</a></h4>
+            <a href="http://twitter.com/@marcoshuttle" title="Marco	Perone">Marco	Perone - @marcoshuttle</a>
         </td>
       </tr>
 
@@ -131,26 +131,34 @@ Attraverso codici di esempio saranno affrontati questi argomenti:
       <tr class="common_event">
         <td class="time">14:30 &ndash; 15:00</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="La sezione Utilities di Facile.it ha recentemente riscritto il proprio applicativo interno utilizzando Ember.js con Ember Data che si appoggia a sua volta ad un WebService REST realizzato in PHP tramite Symfony2 full-stack e alcuni bundle messi a disposizione dall'ecosistema di Symfony per gestire Redis, ElasticSearch, ACL e quant'altro si è reso necessario.
-Durante la presentazione verranno discusse le motivazioni che hanno portato a scegliere ciascun componente, come è stato integrato all'interno dell'applicativo, in quali problematiche ci si è imbattuti e come sono state risolte.">Applicazioni con architetture distribuite in Symfony2</a></h4>
-            <a href="http://twitter.com/thinkindie" title="Matteo Galli">Matteo Galli - @thinkindie</a>
-            <br /><a href="http://slides.com/matteogalli/applicazioni-distribuite-con-symfony2#/" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/110550544" title="" class="video">Video</a>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="
+              Ogni sviluppatore vorrebbe lavorare con una suite di test sempre più grande e con una coverage
+              sempre più alta del proprio codice; ma una suite che impiega troppo tempo a completarsi diventa
+              controproducente. La soluzione normalmente proposta è quella di eseguire più test in parallelo,
+              ed esistono già alcuni strumenti che lo permettono.
+
+              Quando però si eseguono test funzionali in parallelo, si incontrano sempre problemi di concorrenza
+              nell'accesso al database di test, e i tool attualmente disponibili non riescono ancora a risolvere
+              questo problema; ci siamo quindi spinti ad esplorare nei meandri di Doctrine, per risolvere i
+              problemi di isolamento e concorrenza delle fixture, fino a sviluppare una nostra soluzione a questo
+              annoso problema.
+
+              ">Paraunit: test paralleli, Doctrine e le fixture</a></h4>
+            <a href="http://twitter.com/AlessandroLai" title="Alessandro	Lai">Alessandro	Lai - @AlessandroLai</a>
         </td>
       </tr>
 
       <tr class="common_event">
         <td class="time">15:05 &ndash; 15:35</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Molti progetti PHP open source hanno adottato Symfony2 come base per la loro prossima versione, tra questi c'è anche il CMS Drupal (http://drupal.org).
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="
+              Measure is the key to science, as Richard Feynman says.
 
-In questo talk vedremo come scrivere un modulo per Drupal8 in modo da sfruttare il più possibile il suo nuovo motore Symfony2, dall'integrazione con il service container alla gestione degli eventi, dal routing a Twig.
-
-Verrà usato come esempio il modulo webprofiler (http://drupal.org/project/webprofiler) per dimostrare come un bundle per Symfony2 possa essere trasformato in un modulo per Drupal8 e integrato facilmente nel sistema.
-">Come portare il profiler di Symfony2 in Drupal8</a></h4>
-            <a href="http://twitter.com/lussoluca" title="Luca Lusso">Luca Lusso - @lussoluca</a>
-            <br /><a href="http://www.slideshare.net/lussoluca/come-portare-il-profiler-di-symfony2-in-drupal8" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/110520319" title="" class="video">Video</a>
+              In this talk we will cover how to integrate and use InfluxDB in order to collect and
+              represent  our metrics for Symfony2 application thanks to listeners and other application
+              engagements.
+              ">Measure your app internals with InfluxDB (time-series database)</a></h4>
+            <a href="http://twitter.com/walterdalmut" title="Walter	Dal Mut">Walter	Dal Mut - @walterdalmut</a>
         </td>
       </tr>
 
@@ -166,10 +174,14 @@ Verrà usato come esempio il modulo webprofiler (http://drupal.org/project/webpr
       <tr class="common_event">
         <td class="time">16:00 &ndash; 16:30</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Una user story non è completa finché non è nelle mani di chi la deve usare. Solo da lì inizia a produrre valore, sia esso economico o sia feedback. Che si tratti di master, preview o production, con l’automazione delle build si possono evitare operazioni ripetitive, complesse, risparmiare tempo, ottenere interessanti metriche sul codice, tutto al fine di arrivare a poter rilasciare ogni poche ore (o, se volete, ogni volta che la build è verde!). Farlo in modo frequente è possibile anche con Symfony2. Mettiamo in pratica con un esempio una delle 12 pratiche di Extreme Programming: continuous delivery e integration tra git, bash, Jenkins e strumenti deploy.">Tanti "piccoli rilasci" con Symfony2</a></h4>
-            <a href="http://twitter.com/morafabio" title="Fabio Mora">Fabio Mora - @morafabio</a>
-            <br /><a href="http://www.slideshare.net/fabio.mm/tanti-piccoli-rilasci-con-symfony2" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/110550543" title="" class="video">Video</a>
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="
+              JWT is an emerging standard used for authentication purposes
+              It's used in the OpenID connect standard , which is giving it a lot of traction.
+
+              This speech will show how to create a SimplePreAuthenticatorInterface approach for
+              authenticating API calls to a Symfony2 backend
+              ">API Authentication With JWT</a></h4>
+            <a href="http://twitter.com/marcoalbarelli" title="Marco	Albarelli">Marco	Albarelli - @marcoalbarelli</a>
         </td>
       </tr>
 
@@ -177,14 +189,16 @@ Verrà usato come esempio il modulo webprofiler (http://drupal.org/project/webpr
       <tr class="common_event">
         <td class="time">16:35 &ndash; 17:05</td>
         <td>
-            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Prima o poi ogni sviluppatore dovrà confrontarsi con la gestione dei premessi su un dato oggetto, limitando le interazioni possibili in base al concetto di possesso.
+            <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="
+              Il caching per Doctrine è un componente fondamentale ed è per questo che la sua comprensione non è sempre
+              immediata. Ci sono vari strati di cache, il loro scopo è sempre quello di diminuire le richieste o la
+              complessità di elaborazione durante la creazione della native query applicabile dal vostro database.
 
-Il layer di sicurezza di symfony apparentemente non copre questa specifica necessità se non mediante l'ACE (Access Control Engine), studiato sicuramente per necessità più complesse. Le ACL sono infatti uno strumento molto complesso, che viene spesso utilizzato per 1% del suo potenziale; il class-scope, l'object-scope, il class-field-scope e l'object-field-scope sono veramente necessari all'interno del nostro dominio?
-
-Con i voters possiamo regolare l'accesso ad una determinata azione su una risorsa a partire dall'effettivo possesso della stessa, senza utilizzare le ACL e quindi senza preoccuparci di performance e mantenibilità, senza prenderci carico della gestione di un sistema così complesso, sfruttando una delle gemme nascoste di Symfony2 e mantenendo l'attenzione esclusivamente sulla logica di dominio.">The Right to Vote(rs)</a></h4>
-            <a href="http://twitter.com/ClaudioSThought" title="Claudio D'Alicandro">Claudio D'Alicandro - @ClaudioSThought</a>
-            <br /><a href="http://slides.com/claudio-dalicandro/the-right-to-voters#/" title="" class="slides">Slide</a>
-            <br /><a href="http://vimeo.com/110520318" title="" class="video">Video</a>
+              In questo talk vedremo nel dettaglio i tipi di cache e l’incremento delle performance di una vostra
+              applicazione Symfony dopo il loro utilizzo, con uno sguardo particolare alla Second Level Cache, nuova
+              funzionalità di Doctrine 2.5.
+              ">Doctrine\Cache conoscerla per evitare l’effetto boomerang</a></h4>
+            <a href="http://twitter.com/gianarb" title="Gianluca 	Arbezzano">Gianluca 	Arbezzano - @gianarb</a>
         </td>
       </tr>
 
